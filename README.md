@@ -6,3 +6,5 @@ Stop chrome from getting your data with this simple batch
 ![image](https://github.com/LunarXMike/Chrome-tweaker/assets/158159992/6a4415e7-06d6-41fc-86dc-ab3d92da990d)
 
 ![image](https://github.com/LunarXMike/Chrome-tweaker/assets/158159992/21798c01-cb2e-4d46-896c-8ddd569a4514)
+
+Support my YT channel: https://www.youtube.com/@MikeHL85
