@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 SET version=1.0
-title Chrome Tweaker 1.0
+title Chrome Tweaker 
 chcp 65000
 color 0
 cls
