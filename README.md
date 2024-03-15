@@ -3,6 +3,7 @@ Stop chrome from getting your data with this simple batch
 
 
 Update Log #1
+
 Rewrite revent code
 
 ![image](https://github.com/LunarXMike/Chrome-tweaker/assets/158159992/11f0ed31-b2e2-4039-9815-2344bc9cb25e)
