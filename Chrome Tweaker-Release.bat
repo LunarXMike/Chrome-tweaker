@@ -147,8 +147,8 @@ goto tweaks
 cls
 icacls "%localappdata%\Google\Chrome\User Data\SwReporter" /inheritance:r /allow "*S-1-1-0:(OI)(CI)(F)" "*S-1-5-7:(OI)(CI)(F)"
 cacls "%localappdata%\Google\Chrome\User Data\SwReporter" /e /c /d %username%
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "DisallowRun" /t REG_DWORD /d 0 /f
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "0" /t REG_SZ /d "software_reporter_tool.exe" /f
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "DisallowRun"
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun"
 cls
 echo.
 Echo.2
@@ -174,7 +174,7 @@ goto revents
 
 :lovefeed
 cls
-reg add "HKLM\SOFTWARE\Policies\Google\Chrome" /v "UserFeedbackAllowed" /t REG_DWORD /d 1 /f
+reg delete "HKLM\SOFTWARE\Policies\Google\Chrome" /v "UserFeedbackAllowed"
 cls
 echo.
 Echo.2
@@ -185,7 +185,7 @@ goto revents
 
 :lreport
 cls
-reg add "HKLM\SOFTWARE\Policies\Google\Chrome" /v "ChromeCleanupReportingEnabled" /t REG_DWORD /d 1 /f
+reg delete "HKLM\SOFTWARE\Policies\Google\Chrome" /v "ChromeCleanupReportingEnabled"
 cls
 echo.
 Echo.2
@@ -196,7 +196,7 @@ goto revents
 
 :metrics
 cls
-reg add "HKLM\SOFTWARE\Policies\Google\Chrome" /v "MetricsReportingEnabled" /t REG_DWORD /d 1 /f
+reg delete "HKLM\SOFTWARE\Policies\Google\Chrome" /v "MetricsReportingEnabled"
 cls
 echo.
 Echo.2
